@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/luffy_tchan">
+
+    <!-- Foto de Perfil -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/imagem_teste"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Foto de perfil" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ântonio Fernandes"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="times"/>
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apaixonado por tecnologia e inovação"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:textColor="@color/white"
+        android:fontFamily="times"/>
+
+    <!-- Emprego Atual -->
+    <TextView
+        android:id="@+id/currentJobText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emprego Atual: Desenvolvedor Android na ProgramaTech"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="times"/>
+
+    <!-- Experiências -->
+    <LinearLayout
+        android:id="@+id/experienceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experiências Anteriores: Analista de sistemas no LSBD"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="times"/>
+
+        <!-- Experiências serão adicionadas dinamicamente -->
+    </LinearLayout>
+</LinearLayout>
